@@ -1,0 +1,198 @@
+
+margin->border->padding->content
+https://htmlcolorcodes.com/ 
+
+
+
+.display: https://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=inline
+    .none:   The element is completely removed
+    .inline: Displays an element as an inline element (like <span>). Any height and width properties will have no effect
+    .block: Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+    .inline-block: Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+    .flex: Displays an element as a block-level flex container //https://www.w3schools.com/cssref/tryit.asp?filename=trycss_display_contents
+
+.position:
+    .static: default, Static positioned elements are not affected by the top, bottom, left, and right properties.
+    .relative: Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+    .fixed:t always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+    .absolute:An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+    .sticky
+    {
+        position:
+        top:
+        right:
+        bottom:
+        left:
+        z-index:
+
+    }
+* {
+    box-sizing: border-box;
+}
+.float: text with image https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_float
+    .left
+    .right
+    .none
+    .inherit: The element inherits the float value of its parent
+.clear:
+    .none
+    .left
+    .right
+    .both
+    .inherit
+
+.overflow: //The overflow property specifies what should happen if content overflows an element's box.
+    .auto  // will put pic in the block. 
+    .scroll
+    .hidden
+    .visible
+
+p::after //Insert some text after the content of each <p> element:
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+box-sizing:If you set box-sizing: border-box; on an element padding and border are included in the width and height:
+
+
+
+.border: 3px     solid   #73AD21
+         size    type    color
+
+
+.width:
+    .px  
+    .%
+.class{
+
+}
+
+#ID{
+
+}
+div.class{
+
+}
+p {
+	color: green
+}
+.ColorMe p:nth-child(1) {
+    color: aqua;
+}
+section p:nth-child(1) {
+            font-family: sans-serif;
+        }
+
+h1{
+	font-weight: normal; or lighter or bold or 900
+	font-style:  
+	line-height: 2 ;
+	background-color: skyblue
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; // or auto or visible //overflow-x or overflow-y
+    background-color: #333333;
+}
+
+li {
+    float: left;  // will change horizon or vertical display
+}
+
+li a {
+    display: block; or display: inline;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+	color: red;
+    background-color: #111111;
+    text-decoration: underline;
+}
+
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+code { 
+    font-family: monospace;
+}
+img {
+    float: left; //right or none
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 3px solid green;
+    
+}
+Example below shows offset-x, offset-y, blur-radius, spread-radius and color
+div { box-shadow: 2px 2px 3px 1px black; }
+
+}
+div {
+    clear: left;
+}
+The clear property specifies what elements can float beside the cleared element and on which side.
+
+The clear property can have one of the following values:
+
+none - Allows floating elements on both sides. This is default
+left - No floating elements allowed on the left side
+right- No floating elements allowed on the right side
+both - No floating elements allowed on either the left or the right side
+inherit - The element inherits the clear value of its parent
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+The ::after selector inserts something after the content of each selected element(s).
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px solid green;
+    float: right;
+}
+
+.footer { 
+   display: block;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+
+}
+
+
+
+
+
+
